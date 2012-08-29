@@ -472,7 +472,7 @@ def create_win_list():
         else:
             Windows = compare_win_list(Windows,OldWindows)
 
-    for win in Windows:
+    for win in reversed(Windows):
         if is_valid_window(win) == False:
             Windows.remove(win)
 
